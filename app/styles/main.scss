@@ -1,0 +1,41 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+@import "components-font-awesome/scss/font-awesome.scss";
+// endbower
+body {
+  padding-top: 10px;
+}
+@-moz-document url-prefix() {
+  fieldset {
+    display: table-cell;
+  }
+}
+header {
+  height: 120px;
+  .navbar {
+    background-color: transparent;
+    border: none;
+  }
+  .navbar-collapse.collapse {
+    display: block!important;
+  }
+  .navbar-nav>li,
+  .navbar-nav {
+    float: left !important;
+  }
+  .navbar-nav.navbar-right:last-child {
+    margin-right: -15px !important;
+  }
+  .navbar-right {
+    float: right!important;
+  }
+  .navbar-header {
+    float: left!important;
+  }
+}
+
+.popover {
+  word-wrap: break-word;
+}

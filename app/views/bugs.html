@@ -1,0 +1,31 @@
+<div class="modal-header">
+  <button type="button" class="close" ng-click="vm.cancel()" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+  <h3 class="modal-title"><span class="fa fa-bug"></span></h3>
+</div>
+<div class="modal-body">
+
+  <form class="form-horizontal">
+    <div class="form-group">
+      <label for="descricao" class="col-sm-2 control-label">Descrição</label>
+      <div class="col-sm-10">
+        <input type="text" name="descricao" class="form-control" ng-model="vm.bug.descricao" placeholder="Descrição">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="url" class="col-sm-2 control-label">Url</label>
+      <div class="col-sm-10">
+        <input type="text" nama="url" class="form-control" ng-model="vm.bug.url" placeholder="Url">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="exemplo" class="col-sm-2 control-label">Exemplos</label>
+      <div class="col-sm-10">
+        <textarea class="form-control" ng-model="vm.bug.exemplo" rows="3"></textarea>
+      </div>
+    </div>
+  </form>
+</div>
+<div class="modal-footer">
+  <button class="btn btn-primary btn-sm" type="button" ng-click="vm.save()">Salvar</button>
+  <button class="btn btn-default btn-sm" type="button" ng-click="vm.cancel()">Cancelar</button>
+</div>
